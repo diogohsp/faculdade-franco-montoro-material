@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1707354682 source:c:\users\user\desktop\projetos\codeblocks\lista1-estruturadedados\main.cpp
+	<iostream>
+
+1707352071 source:c:\users\user\desktop\projetos\codeblocks\lista1-estruturadedados\categoriasnadador.cpp
+	<iostream>
+
+1708043169 source:c:\users\user\desktop\projetos\codeblocks\estrutura-de-dados\lista1-estruturadedados\main.cpp
+	<iostream>
+	<locale.h>
+	<math.h>
+
