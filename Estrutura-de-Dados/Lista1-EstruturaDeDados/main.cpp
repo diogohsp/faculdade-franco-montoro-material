@@ -14,19 +14,50 @@ int quadradosDosNumeros();
 int multiplosDeCinco();
 int eleicao();
 int conjunto();
+int cinema();
 
 int main()
 {
-setlocale(LC_ALL, "Portuguese");
-   //imc();
-   //categoriaNadador();
-   //salario();
-   //reajusteSalario();
-   //condicaoDePagamento();
-   //quadradosDosNumeros();
-    //multiplosDeCinco();
-    //eleicao();
-    conjunto();
+    int codigo;
+    setlocale(LC_ALL, "Portuguese");
+
+    cout<<" 1- Exercicio 1 IMC \n 2- Exercicio 2 NADADOR \n 3- Exercicio 3 SALARIO \n 4- Exercicio 4 REAJUSTE SALARO \n 5- Exercicio 5 CONDICAO DE PAGAMENTO \n 6- Exercicio 6 QUADRADOS DOS NUMEROS \n 7- Exercicio 7 MULTIPLOS DE 5 \n 8- Exercicio 8 ELEICAO \n 9- Exercicio 9 CONJUNTO \n 10- Exercicio 10 CINEMA"<<endl;
+    cout<<"Escolha o exercicio: ";
+    cin>>codigo;
+
+    switch(codigo){
+
+        case 1:
+            imc();
+        break;
+        case 2:
+            categoriaNadador();
+        break;
+        case 3:
+            salario();
+        break;
+        case 4:
+            reajusteSalario();
+        break;
+        case 5:
+            condicaoDePagamento();
+        break;
+        case 6:
+            quadradosDosNumeros();
+        break;
+        case 7:
+            multiplosDeCinco();
+        break;
+        case 8:
+            eleicao();
+        break;
+        case 9:
+            conjunto();
+        break;
+        case 10:
+            cinema();
+        break;
+    }
 }
 
 int imc(){
@@ -181,7 +212,7 @@ int calculaPorcentagem(int numero, int totalDeVotos){
 
 int eleicao(){
 
-    int candidato1= 0, candidato2= 0, nulo= 0, branco= 0, codigo, totalDeVotos= 0, finalizador = 1, porcetagemCandidato1 = 0, porcetagemCandidato2 = 0, porcetagemNulo = 0, PorcentagemBranco= 0;
+    int candidato1= 0, candidato2= 0, nulo= 0, branco= 0, codigo, totalDeVotos= 0, finalizador = 1, porcentagemCandidato1 = 0, porcentagemCandidato2 = 0, porcentagemNulo = 0, PorcentagemBranco= 0;
 
     while(finalizador > 0){
 
@@ -219,16 +250,16 @@ int eleicao(){
 
     totalDeVotos = candidato1 + candidato2 + nulo + branco;
 
-    porcetagemCandidato1 = calculaPorcentagem(candidato1, totalDeVotos);
-    porcetagemCandidato2 = calculaPorcentagem(candidato2, totalDeVotos);
-    porcetagemNulo= calculaPorcentagem(nulo, totalDeVotos);
+    porcentagemCandidato1 = calculaPorcentagem(candidato1, totalDeVotos);
+    porcentagemCandidato2 = calculaPorcentagem(candidato2, totalDeVotos);
+    porcentagemNulo= calculaPorcentagem(nulo, totalDeVotos);
     PorcentagemBranco= calculaPorcentagem(branco, totalDeVotos);
 
     cout<<"Total de votos: "<<totalDeVotos<<endl;
-    cout<<"Candidato 1: "<<porcetagemCandidato1<<"%"<<endl;
-    cout<<"Candidato 2: "<<porcetagemCandidato1<<"%"<<endl;
-    cout<<"Nulo: "<<porcetagemCandidato1<<"%"<<endl;
-    cout<<"Branco: "<<porcetagemCandidato1<<"%"<<endl;
+    cout<<"Candidato 1: "<<porcentagemCandidato1<<"%"<<endl;
+    cout<<"Candidato 2: "<<porcentagemCandidato2<<"%"<<endl;
+    cout<<"Nulo: "<<porcentagemNulo<<"%"<<endl;
+    cout<<"Branco: "<<PorcentagemBranco<<"%"<<endl;
 
 }
 
@@ -253,6 +284,57 @@ int conjunto(){
 
     cout<<"O aluno mais alto é "<<alunoMaisAlto<<" e sua altura é: "<<maiorAltura<<endl;
     cout<<"O aluno mais baixo é "<<menorAluno<<" e sua altura é: "<<menorAltura<<endl;
+
+}
+
+int cinema(){
+
+    int idade, opniao, otimo=0, bom=0, regular=0, ruim=0,totalPessoas=0,mediaIdade=0,totalIdade=0,porcentagemOtimo=0,porcentagemBom,porcentagemRegular,porcentagemRuim,finalizador = 1 ;
+
+    while (finalizador >= 1){
+        cout << "Qual sua idade: ";
+        cin >> idade;
+
+        totalIdade = totalIdade + idade;
+        if(idade >= 1){
+            cout << " 1- Otimo \n 2- Bom \n 3- Regular \n 4- Ruim" << endl;
+            cout << "Qual sua opiniao sobre o filme: ";
+            cin >> opniao;
+
+            switch (opniao) {
+                case 1:
+                    otimo++;
+                break;
+                case 2:
+                    bom++;
+                break;
+                case 3:
+                    regular++;
+                break;
+                case 4:
+                    ruim++;
+                break;
+                default:
+                    cout << "Nenhuma opcao valida foi inserida!";
+                break;
+            }
+        }else{
+                totalPessoas = otimo + bom + regular + ruim;
+                mediaIdade = totalIdade / totalPessoas;
+                porcentagemOtimo = calculaPorcentagem(otimo, totalPessoas);
+                porcentagemBom = calculaPorcentagem(bom, totalPessoas);
+                porcentagemRegular = calculaPorcentagem(regular, totalPessoas);
+                porcentagemRuim = calculaPorcentagem(ruim, totalPessoas);
+                cout<<"Quantidade de pessoas que responderam a pesquisa: "<<totalPessoas<<endl;
+                cout<<"Media de idade das pessoas que responderam a pesquisa: "<<mediaIdade<<endl;
+                cout<<"Candidato 1: "<<porcentagemOtimo<<"%"<<endl;
+                cout<<"Candidato 2: "<<porcentagemBom<<"%"<<endl;
+                cout<<"Nulo: "<<porcentagemRegular<<"%"<<endl;
+                cout<<"Branco: "<<porcentagemRuim<<"%"<<endl;
+                finalizador = 0;
+            }
+
+    } ;
 
 }
 
