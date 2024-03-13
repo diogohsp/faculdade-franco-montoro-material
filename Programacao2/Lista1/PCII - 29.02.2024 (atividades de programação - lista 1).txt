@@ -1,0 +1,59 @@
+
+-------------------------------------------------------------------------------------
+Disciplina: Programação de Computadores II
+Assunto: Atividades de programação - Lista 1
+Data: 29/02/2024
+-------------------------------------------------------------------------------------
+
+1-) Utilizando a linguagem C++, desenvolva um programa simples, onde é solicitado ao usuário digitar uma quantidade, um nome e o valor de um determinado produto até que o usuário informe que não quer mais informar nenhum novo produto.  A cada quantidade, produto e valor unitário, o seu programa deve mostrar o valor total do produto informado e valor total a pagar (acumulado) de todos os produtos.
+
+-------------------------------------------------------------------------------------
+
+2-) Programa simples em c++, sem o uso de função, recursidade ou ponteiro que gera 15 números inteiros aleatórios a ser armazenado em um vetor entre 1 e 25. Seu programa deve mostrar o indice e o respectivo valor armazenado. 
+
+-------------------------------------------------------------------------------------
+
+3-) Você deve ter percebido que o programa anterior pode gerar números aleatórios repetidos. No entanto, sabemos que se esses números forem palpites para um jogo de loteria, não poderemos usar os números repetidos, e dessa forma, faltará números para completar a aposta. Sendo assim, desenvolva uma nova versão do programa que não gere números repetidos, ou seja, deverão ser gerados 15 números diferentes para a aposta.
+
+-------------------------------------------------------------------------------------
+
+4-) Desenvolva um programa que solicita ao usuário um valor, um percentual mensal, calcula e mostra ao final o valor do montante. Dessa forma, supondo que o valor de investimento informado foi de 1000.00, por um período de 120 meses, a uma taxa de 1.00% ao mês,  no sistema de juros compostos, a saída esperada deve ser algo próximo a: 
+
+Montante: 3300.38
+Valor Investido: 1000.00
+Rendimento: 2300.38
+
+-------------------------------------------------------------------------------------
+
+5-) Desenvolva um programa que verifica e mostra se um ano informado pelo usuário é ou não bissexto, considerando-se as regras a seguir:
+
+- Um ano é bissexto se for divisível por 4. No entanto, anos divisíveis por 100 não são bissextos, a menos que sejam divisíveis por 400. Lembre-se que estamos falando de divisão inteira. 
+
+De forma resumia, para ilustrar e facilitar o seu entendimento, veja alguns exemplos:
+
+- Se o ano for divisível por 4, mas não por 100, é bissexto.
+- Se o ano for divisível por 100 e não for divisível por 400, não é bissexto.
+- Se o ano for divisível por 400, é bissexto.
+
+Em outras palavras:
+
+Se ano não for divisível por 100 ou ano for divisível por 400
+      Então o ano é bissexto // bissexto = true, por exemplo
+
+Se (bissexto)
+   Bloco de comando
+Caso contrário
+   Bloco de comando
+
+Alguns exemplos numéricos:
+
+1900 é divisível por 100, mas não por 400, então não é bissexto.
+2000 é divisível por 400, então é bissexto.
+2004 é divisível por 4, então é bissexto.
+2019 não é divisível por 4, então não é bissexto.
+
+-------------------------------------------------------------------------------------
+
+6-) Programa que sorteio em um dado um numero entre 1 e 6. Solicita ao usuário um palpite, verifica e mostra se o usuário acertou ou não o número gerado. Seu programa deve mostrar também o numero que foi gerado, independente do usuário acertar ou não.
+
+-------------------------------------------------------------------------------------
