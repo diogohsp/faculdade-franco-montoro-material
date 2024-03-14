@@ -11,12 +11,14 @@ int mapeandoArray();
 int arrayInverso();
 int somaVetores();
 int temperatura();
+int vetorPtr();
+int mediaPtr();
 
 int main() {
     int codigo;
     setlocale(LC_ALL, "Portuguese");
 
-    cout<<" 1- Exercicio 1 VERIFICA NOME \n 2- Exercicio 2 MEDIA DA SALA \n 3- Exercicio 3 MAPEANDO O ARRAY \n 4- Exercicio 4 ARRAY INVERSO \n 5- Exercicio 5 SOMA DE VETORES \n 6- Exercicio 6 TEMPERATURA"<<endl;
+    cout<<" 1- Exercicio 1 VERIFICA NOME \n 2- Exercicio 2 MEDIA DA SALA \n 3- Exercicio 3 MAPEANDO O ARRAY \n 4- Exercicio 4 ARRAY INVERSO \n 5- Exercicio 5 SOMA DE VETORES \n 6- Exercicio 6 TEMPERATURA \n 7- Exercicio 7 ARRAY POR PONTEIRO \n 8- Exercicio 8 MEDIA POR PONTEIRO"<<endl;
     cout<<endl;
     cout<<"Escolha o exercicio: ";
     cin>>codigo;
@@ -41,6 +43,13 @@ int main() {
         break;
         case 6:
             temperatura();
+        break;
+        case 7:
+            vetorPtr();
+        break;
+        case 8:
+            mediaPtr();
+        break;
         default:
             cout<<"Exercicio não existe!";
         break;
@@ -137,6 +146,16 @@ int mapeandoArray(){
       }
 }
 
+int* inverteArray(int arrayBase[], int arraySize) {
+    int* arrayInverso = new int[arraySize];
+
+    for(int i = 0; i<=arraySize; i++){
+        arrayInverso[i] = arrayBase[arraySize - (i + 1)];
+    }
+
+    return arrayInverso;
+}
+
 //4. Faça um programa em C++ para ler 20 números e armazenar em um vetor.
 //Após a leitura total dos 20 números, o algoritmo deve escrever esses 20
 //números lidos na ordem inversa.
@@ -151,15 +170,18 @@ int arrayInverso(){
         cin>>arrayBase[i];
     }
 
-    for(int i = 0; i<=ARRAY_SIZE; i++){
-        arrayInverso[i] = arrayBase[ARRAY_SIZE - (i + 1)];
-    }
+    int* arrayInvertido = inverteArray(arrayBase, ARRAY_SIZE);
+
 
     cout<<"O array inverso é: ";
     for(int i = 0; i<ARRAY_SIZE; i++){
-        cout<<arrayInverso[i];
+        cout<<arrayInvertido[i];
     }
+    cout << endl;
 
+    delete[] arrayInvertido;
+
+    return 0;
 
 }
 
@@ -255,5 +277,58 @@ int temperatura(){
     cout<<"A temperatura mais alta do ano foi: "<<maiorTemperatura<<endl;
     cout<<"A temperatura mais baixa do ano foi: "<<menorTemperatura<<endl;
     cout<<"A temperatura média do ano foi: "<<mediaTemperatura<<endl;
+}
+
+//7.Faça um programa em C++ que crie um vetor de 10 inteiros, coloque
+//peça valores ao usuário e depois imprima todos os seus conteúdos na
+//ordem normal e depois inversa. A impressão dos conteúdos deverá ser
+//feita usando ponteiro.
+
+int vetorPtr(){
+    const int SIZE_ARRAY = 5;
+    int arrayBase[SIZE_ARRAY] = {};
+
+    for(int i = 0; i < SIZE_ARRAY; i++){
+        cout<<"Digite o valor do array no indice "<<i<<": ";
+        cin>> arrayBase[i];
+    }
+
+    int* arrayInvertido = inverteArray(arrayBase, SIZE_ARRAY);
+    int* ptrArrayInvertido = &arrayInvertido[0];
+
+    cout<<"O array inverso e: ";
+    for(int i=0; i<5; i++){
+        cout<<*ptrArrayInvertido;
+        ptrArrayInvertido++;
+    }
+        cout<<endl;
+
+}
+
+//8. Escreva um programa em C++ que crie um array de 5 inteiros, preencha-o
+//com valores fornecidos pelo usuário e, em seguida, calcule a média dos
+//valores usando ponteiros.
+
+int mediaPtr(){
+    const int SIZE_ARRAY = 5;
+    int arr[SIZE_ARRAY] = {};
+    float mediaValores = 0, totalValores = 0;
+
+    for(int i = 0; i < SIZE_ARRAY; i++){
+        cout<<"Digite o valor do array no indice "<<i<<": ";
+        cin>> arr[i];
+    }
+
+int* ptrArray = &arr[0];
+
+    for(int i=0; i<5; i++){
+        totalValores += *ptrArray;
+    }
+
+    mediaValores = totalValores/SIZE_ARRAY;
+
+    cout<<"A media e: "<<mediaValores;
+
+    cout<<endl;
 }
 
