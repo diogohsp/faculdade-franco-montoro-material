@@ -1,0 +1,28 @@
+
+Disciplina: Programação de Computadores II
+Assunto: Práticas de programação (atividade para nota)
+Data: 14-03-2024
+
+1-) Desenvolva um programa que carrega um vetor com 10 números inteiros entre 1 e 50. Seu programa deve mostrar o conteúdo do vetor, o menor e o maior valor armazenado.
+
+
+2-) Desenvolva um programa que solicita uma palavra, verifica e mostra se a palavra informada pelo usuário é ou não um palindromo. Palíndromo é uma palavra, frase ou número que permanece igual quando lida de trás para diante, ou vice-versa. Você já havia percebido que a palavra Civic é um palíndromo?  Faça o seu programa e teste você mesmo!
+
+
+3-) Programa que colicita ao usuário o número de termos da sequência de Fibonacci, verifica e mostra os n termos da sequência. Dessa forma, se for informado o número 10, a saída deve ser: 
+0 1 1 2 3 5 8 13 21 34 55
+
+
+4-) Desenvolva um programa que solicita um número inteiro ao usuário, verifica e mostra se o número informado é ou não primo. Dessa forma, considerando-se que o usuário informou o número 17, a saída do seu programa deve ser algo como:
+
+Você quer saber se o número 17 é primo? Sim, o número 17 é primo pois só tem 2 divisores!
+
+No entanto, supondo que o usuário informou o número 9, a saída esperada para o seu programa deveria ser algo similar a:
+
+Você quer saber se o número 9 é primo? Não, o número 9 não é primo pois tem 3 divisores!
+
+
+5-) Desenvolver um jogo que considera dois jogadores, por exemplo o jogador1 e o jogador2. Cada jogador lançará (jogará) um dado. Deverá ser atribuido 1 ponto a quem tiver o maior valor sorteado no dado. Se os valores sorteados forem iguais, os dois jogadores marcam ponto na rodada em questão. Vence a partida quem fizer 3 pontos. A cada rodada você deve mostrar o valor sorteado, quem fez ponto na rodada e a pontução atual.
+
+
+6-) Crie uma nova versão do jogo desenvolvido anteriormente. Nessa nova versão, considere que o usuário pode informar o seu nome/apelido, ao invés de aparecer apenas Jogador 1 e Jogador 2. Além disso, fique a vontade para realizar outros ajustes que julgar interessante.
