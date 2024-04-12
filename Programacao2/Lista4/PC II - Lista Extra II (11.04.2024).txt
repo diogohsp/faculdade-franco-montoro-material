@@ -1,0 +1,69 @@
+
+Disciplina: Programação de Computadores II
+Assunto: Revisão e práticas de programação
+Data: 11/04/2024
+
+Para cada um dos programas a seguir, inserir um print dos testes em um documento word / docs abaixo de cada um dos enunciados, por exemplo. Enviar também um txt com todos os códigos identificados.
+
+E-mail para envio: robson.canato@gmail.com
+
+1-) Desenvolva um programa em C++, que informado um número inteiro, por exemplo o número 15, imprime o seguinte padrão:
+
+*       *       *
+2       *       *
+*       3       *
+4       *       *
+*       *       5
+6       6       *
+*       *       *
+8       *       *
+*       9       *
+10      *       10
+*       *       *
+12      12      *
+*       *       *
+14      *       *
+*       15      15
+
+2-) Agora que você já entendeu, implementou e testou o problema anterior, desenvolva uma nova versão onde o padrão de saída, considerando-se por exemplo o número fornecido pelo usuário como sendo o 15, é o seguinte:
+
+*       15      15
+14      *       *
+*       *       *
+12      12      *
+*       *       *
+10      *       10
+*       9       *
+8       *       *
+*       *       *
+6       6       *
+*       *       5
+4       *       *
+*       3       *
+2       *       *
+*       *       *
+
+3-) Desenvolva uma nova versão dos programas anteriores, sendo que nesta versão, solicite ao usuário como ele (usuário) quer que a saída seja exibida. Dessa forma, seu programa deve considerar as duas possibilidades e mostrar de acordo com a escolhida pelo usuário. Testar as opções. Se for o caso, tratar alguma opção inválida informada.
+
+
+4-) Agora que você já está fera, desenvolva uma nova versão que além de mostrar o padrão, também mostra o total com e sem valores. Dessa forma, considerando-se que foi informado o valor 15, a saída esperada do seu novo programa deve ser algo similar a:
+
+*       15      15
+14      *       *
+*       *       *
+12      12      *
+*       *       *
+10      *       10
+*       9       *
+8       *       *
+*       *       *
+6       6       *
+*       *       5
+4       *       *
+*       3       *
+2       *       *
+*       *       *
+Com valor...: 131
+Sem valor...: 229
+
+5-) Essa é por sua conta! Escreva um problema (descrição) e a solução (programa) que julgar interessante.
