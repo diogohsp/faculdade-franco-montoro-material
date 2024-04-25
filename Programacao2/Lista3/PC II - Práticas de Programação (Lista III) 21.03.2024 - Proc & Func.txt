@@ -1,0 +1,37 @@
+
+Disciplina: Programação de Computadores II
+Assunto: Práticas de programação (atividade para nota) 
+Conteúdo: Procedimentos e Funções (revisão de conceitos)
+Data: 21/03/2024
+
+Enviar atividade para: robson.canato@francomontoro.com.br
+
+1-) Desenvolva um procedimento em C++ que verifica se um número intiero é ou não primo! Dessa forma, se o número informado pelo usuário fo o 5, a saída do seu programa deve ser algo similar a: O número 5 é primo! Caso fosse informado o numero 9, a saída esperada seria algo similar a: O número 9 não é primo!
+
+
+2-) Desenvolva um procedimento que recebe como parâmetro uma mensagem e o número de vezes que essa mensagem deve ser mostrada na tela. Dessa forma, considerando-se que a mensagem informada tenha sido: "Bem vindo ao curso de Ciência da Computação" e o número de vezes igual a 5, a saída esperada deve algo similar a:
+
+1 - Bem vindo ao curso de Ciência da Computação
+2 - Bem vindo ao curso de Ciência da Computação
+3 - Bem vindo ao curso de Ciência da Computação
+4 - Bem vindo ao curso de Ciência da Computação
+5 - Bem vindo ao curso de Ciência da Computação
+
+Dica: como vamos trabalhar com uma cadeia de caracteres na forma de string, utilize o comando getline(cin, nomeDaVariável) para ler a entrada dos dados da mensagem. Adicione a biblioteca string.
+
+
+3-) Desenvolva uma função sem parâmetro onde o usuário informa um número inteiro, verifica e mostra qual o dia da semana correspondente. Dessa forma, se for informado o número 3, a saída esperada deve ser algo como: O número informado corresponde a Terça-feira!. Sendo assim, qualquer número informado que não corresponda a um dia da semana, considerando-se como exemplo o 8, deverá ter como saída algo similar a: O número informado não corresponde ao nenhum dia da semana!
+
+
+4-) Desenvolva uma função com parâmetro que recebe um número inteiro informado pelo usuário, verifica e mostra o número de divisores inteiros do referido número. Dessa forma, caso fosse informado o número 7, a saída esperada é: 2.
+
+
+5-) Tendo em vista os conceitos e práticas anteriores, proponha (enunciado) e desenvolva (solução) do que se pede a seguir:
+
+5.1-) Procedimento sem passagem de parâmetros.
+
+5.2-) Procedimento com passagem de parâmetros.
+
+5.3-) Função sem passagem de parâmetros.
+
+5.4-) Função com passagem de parâmetros.
