@@ -1,0 +1,26 @@
+-----------------------------------------------------------
+Disciplina: Programação de Computadores II
+Atividades práticas: lista extra (parte II) 
+Vetores, matrizes e structs em C++
+Data: 02/05/2024
+-----------------------------------------------------------
+
+1-) Programa que preenche um vetor de 10 posições (elementos) com números inteiros aleatórios entre 1 e 50. Seu programa deve mostrar (separadamente) tanto os valores armazenados quanto o indice onde cada um dos elementos estão armazenados.
+
+2-) Desenvolva uma nova versão do programa anterior que considera mostrar o valor e a posição do maior e do menor valor armazenado no vetor, além de mostrar todos os valores e indices onde estes estão armazenados.
+
+3-) Desenvolva uma nova versão do programa anterior que considera o número de elementos do vetor como uma informações a ser fornecida pelo usuário.
+
+4-) Programa de preenche uma matriz de 3 linhas e 4 colunas (12 elementos) com números inteiros aleatórios entre 1 e 50. Seu programa deve mostrar (separadamente) tanto os valores armazenados quanto o indice onde cada um dos elementos estão armazenados.
+
+5-) Desenvolva uma nova versão do programa anterior que considera mostrar o valor e a posição do maior e do menor valor armazenado na matriz, além de mostrar todos os valores e indices onde estes estão armazenados.
+
+6-) Desenvolva uma nova versão do programa anterior que considera o número de elementos da matriz (número de linhas e colunas) como informações a serem fornecidas pelo usuário.
+
+7-) Utilizando os conceitos e práticas de struct, desenvolva um programa que realiza o cadastro de N produtos. Cada produto deve ter um codigo, um nome, um valor unitário de custo e uma quantidade de estoque. Após as inserções, seu programa deve mostrar todos os dados dos produtos cadastrados.
+
+8-) Faça um modificação no programa anterior onde é considerado o campo valor total de custo por produto e o valor total geral de custo do estoque.
+
+9-) Faça uma nova versão do programa anterior que considera o preço de venda de cada um dos produtos, que é obtido através do valor unitário de custo acrescido de 40%. 
+
+10-) Desenvolva a descrição e a implementação de um programa que utiliza os recursos de struct.
