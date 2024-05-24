@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------------------
+Disciplina: Programaçaõ de Compitadores II 
+Assunto: Introdução à Linguagem de Programação Python
+Atividade: Práticas de programação (Estruturas / síntaxe básica)
+Data: 23 / 05 / 2024
+-------------------------------------------------------------------------------------------
+
+Com base nos conceitos e exemplos apresentados, discutidos e exemplificados sobre as estruturas básicas de programação na linguagem Python, desenvolva o que se pede a seguir:
+
+1-) Programa que solicita duas notas, calcula e mostra a média dessas notas.
+
+2-) Desenvolva juma nova versão do programa anterior de modo que seja feita uma consistência das notas informadas, ou seja, a nota deve estar entre 0  e 10.00. 
+
+3-) Considerando a versão anterior (programa 2), faça uma nova versão do seu programa onde, com base na média obtida, seja impressa uma das seguintes mensagens: Para médias maior ou iguais a 7.00, "Aprovado!"; para médias maior ou igual a 4.00, "Exame!"e para nota inferior a 4.00, "Reprovado!".
+
+4-) Desenvolva um programa que verifica e mostra todos os divisores de 2, 3 e 5, entre 1 e 100, simultaneamente.
+
+5-) Desenvoçva uma nova versão do programa anterior que dessa vez considera e mostra todos os divisores entre um limite inferior e um limite superior. 
+
+6-) Programa que solicta um número, verifica e mostra se o número informado é primo ou não.
+
+7-) Desenvolva um programa que verifica e mostra o fatorial de um número inteiro informado pelo usuário.
+
+8-) Programa que solicite dois números e que pergunte qual operação você deseja realizar. Você deve poder calcular a soma (+), subtração (-), multiplicação (*) e divisão (/). Exiba o resultado da operação solicitada.
+
+9-) Desenvolva um programa que solicita dois números. Imprima o resultado da multiplicação do primeiro pelo segundo. Utilize apenas o operador de soma para calcular o resultado. Lembre-se de que podemos entender a multiplicação de dois números como somas sucessivas de um deles. Assim, 3 × 4 = 4 + 4 + 4 = 3 + 3 + 3.
+
+10-) Programa que mostra os números de 1 a 10 em ordem decrescente.
+
+11-) Desenvolva uma nova versão do programa anterior que considere mostrar em ordem decrescente todos o números ímpares entre o limite inferior e o limite superior informados pelo usuário.
