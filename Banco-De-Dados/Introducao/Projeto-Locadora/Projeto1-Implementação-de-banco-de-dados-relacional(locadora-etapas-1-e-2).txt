@@ -1,0 +1,39 @@
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Disciplina...........................: Banco de Dados I
+Assunto / Tema..................: Modelagem (etapas 1 e 2)
+Atividade Extra...................: Projeto de banco de dados relacional (parcial)
+Data da aula / atividade.......: 03/09/2024 (apresentação/entrega da atividade realizada de acordo com o especificado até 05/09/2024)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Projeto de implementação parcial (entrevista, levantamento e análise de requisitos e modelagem conceitual) de um banco de dados relacional que tem como objetivo realizar o controle das locações de vídeos (filmes) realizadas pelos seus clientes.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Etapa 1: Entrevista / análise e levantamento de requisitos
+
+O banco de dados em questão tem como objetivo realizar o controle das locações de vídeos (filmes) realizadas pelos clientes. O Banco de dados deve manter informações dos filmes (acervo), dos clientes, dos funcionários e das locações. As informações a serem mantidas para os filmes são: código, título, sinopse, quantidade e valor unitário. A locadora pode possuir muitos clientes, e, para cada cliente é necessário armazenar o código, nome, CPF, data de nascimento, telefone e email. As locações devem ser executadas por funcionários cadastrados, e por isso, devem-se manter as seguintes informações a respeito dos funcionários: co código, nome, CPF, data de nascimento, telefone e email. Deseja-se também, armazenar informações a respeito das categorias dos filmes, como o código e nome da categoria (ação, aventura, comédia, etc). Informações como código e nome dos atores também devem ser armazenadas. Os clientes podem ter mais de uma locação. Cada locação pode conter mais de um filme. As locações devem armazenar o número da locação, código do funcionário que está realizando a locação, código do cliente, código do filme, data de locação e data de devolução.
+
+Ainda na fase de entrevista, levantou-se a necessidade de considerar que: um cliente pode possuir nenhuma ou muitas locação e uma ou muitas locações só podem pertencer a um único cliente. Uma ou mais locações devem ser atendidas por um único funcionário. Uma ou várias locações devem ter um ou vários itens (filmes). Um ou vários filmes devem pertencem a somente uma categoria. Um ou mais filmes devem ter um e somente um ator cadastrado como principal. 
+
+Com base nas anotações realizadas nesta etapa, identificar e definir as entidades, atributos e respectivos domínios (tipos de dados), por exemplo int, varchar, date e float, a serem armazenados em cada um dos respectivos atributos.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Etapa 2: Considerando a análise e levantamento de requisitos realizadas na etapa 1, e utilizando a ferramenta de modelagem de banco de dados relacional BrModelo, desenvolver o modelo conceitual que representa o banco de dados em questão.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Recomendações:
+
+- Criar uma pasta para o projeto e armazenar nesta todos os artefatos (descrições, modelo conceitual, modelo lógico, modelo físico e outros scripts) que serão necessários e desenvolvidos ao longo deste projeto.
+- Fazer backup (não deixar somente no computador onde está sendo desenvolvido).
+- Fazer perguntas sempre que tiver dúvida de algum conceito / procedimento.
+
+Observação:
+
+Ao final de cada atividade, antes de iniciar uma nova atividade faremos a revisão dos conceitos, ajustes e trabalharemos novos conceitos a serem utilizados nas próximas fases. Em outras palavras, esse projeto é incremental, ou seja, a etapa seguinte depende dos conceitos e práticas da etapa atual.
+
+[];
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

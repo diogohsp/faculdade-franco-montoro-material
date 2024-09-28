@@ -42,6 +42,9 @@ def mediaRegular():
     else:
         print("Reprovou!!")
 
+def divisores():
+    for 
+
 def Lista1(variavel):
     if variavel == 1:
         mediaNotas()

@@ -1,0 +1,82 @@
+/* LogicoLocadora: */
+
+CREATE TABLE categoria (
+    codigoCategoria int PRIMARY KEY,
+    nomeCategoria varchar(100)
+);
+
+CREATE TABLE filme (
+    codigoFilme int PRIMARY KEY,
+    tituloFilme varchar(100),
+    sinopseFilme varchar(200),
+    quantidadeFilme int,
+    valorUnitarioFilme float,
+    fk_categoria_codigoCategoria int,
+    fk_ator_codigoAtor int
+);
+
+CREATE TABLE ator (
+    codigoAtor int PRIMARY KEY,
+    nomeAtor varchar(100)
+);
+
+CREATE TABLE cliente (
+    codigoCliente int PRIMARY KEY auto_increment,
+    nomeCliente varchar(100) not null,
+    cpfCliente varchar(100) not null unique,
+    dataNascimentoCliente date not null,
+    telefoneCliente varchar(15) not null,
+    emailCliente varchar(100) not null
+);
+
+CREATE TABLE locacao (
+    numeroLocacao int PRIMARY KEY,
+    dataLocacao date,
+    dataDaDevolucao date,
+    fk_cliente_codigoCliente int,
+    fk_funcinario_codigoFuncionario int
+);
+
+CREATE TABLE funcinario (
+    codigoFuncionario int PRIMARY KEY,
+    nomeFuncionario varchar(100),
+    cpfFuncionario varchar(11),
+    dataNascimentoFuncionario date,
+    telefoneFuncionario varchar(15),
+    emailFuncionario varchar(100)
+);
+
+CREATE TABLE filmeLocacao (
+    fk_filme_codigoFilme int,
+    fk_locacao_numeroLocacao int
+);
+ 
+ALTER TABLE filme ADD CONSTRAINT FK_filme_2
+    FOREIGN KEY (fk_categoria_codigoCategoria)
+    REFERENCES categoria (codigoCategoria)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE filme ADD CONSTRAINT FK_filme_3
+    FOREIGN KEY (fk_ator_codigoAtor)
+    REFERENCES ator (codigoAtor)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE locacao ADD CONSTRAINT FK_locacao_2
+    FOREIGN KEY (fk_cliente_codigoCliente)
+    REFERENCES cliente (codigoCliente)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE locacao ADD CONSTRAINT FK_locacao_3
+    FOREIGN KEY (fk_funcinario_codigoFuncionario)
+    REFERENCES funcinario (codigoFuncionario)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE filmeLocacao ADD CONSTRAINT FK_filmeLocacao_1
+    FOREIGN KEY (fk_filme_codigoFilme)
+    REFERENCES filme (codigoFilme)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE filmeLocacao ADD CONSTRAINT FK_filmeLocacao_2
+    FOREIGN KEY (fk_locacao_numeroLocacao)
+    REFERENCES locacao (numeroLocacao)
+    ON DELETE RESTRICT;
