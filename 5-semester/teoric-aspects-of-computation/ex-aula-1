@@ -1,0 +1,19 @@
+1- Qual o número de prefixos, sufixos e subpalavra de uma palavra de tamanho n ?
+
+tamanho da palavra = n
+
+o numero de sufixos é: n + 1
+o numero de prefixos é: n + 1
+o numero de subpalavras é: n(n+1)/2 (algo como o fatorial mas somando, "soma dos
+primeiros n numeros naturais ou numeros triangulares")
+
+outra forma: "some tudo isso, variando a letra k de 1 até n": 
+Somatorio(k=1->n) = (n-k+1)
+
+4-1+1 = 4
+4-2+1 = 3
+4-3+1 = 2
+4-4+1 = 1
+resultado = 10
+
+4(4 + 1)/2 -> 16+4/2 -> 20/2 = 10
